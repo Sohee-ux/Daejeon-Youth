@@ -1,0 +1,156 @@
+/**************** 테블릿 반응형 ****************/
+@media screen and (max-width: 1024px){
+  body{height: auto; font-size: 16px;}
+  /********* header, nav **********/
+  header{width: 100%; height: 80px; padding: 1rem; position: fixed;}
+  nav{ display: none;}
+  .menu{display: block; width: 60px; height: 60px; margin-left: .8rem; font-size: 0; background: url(images/menu_btn.png); cursor: pointer;}
+  header:hover .menu{background: url(images/menu_btn2.png);}
+  .submenu_container{margin: auto;}
+  .logo{display: flex; width: 100%; background-color: #fff; justify-content: center; align-content: center;}
+  .logo a img{width: 210px; background-repeat: no-repeat; position: absolute; left: 50%; top: 30%; transform: translateX(-50%);}
+  .inner{width: 80%;}
+  .quickMenu{display: none;}
+  .top_icons{display: none;;}
+  /********* main visual *********/
+  .visual_top{flex-direction: column; margin: -50px;}
+  .slogan{position: relative; margin-bottom: 50px;}
+  .slogan h2 br{display: inline; content: "\A"; white-space: pre;}
+  .left_box{width: 100%; order: 1;}
+  .right_box{width: 100%; justify-content: center;}
+  .left_box .search{width: 100%;}
+  .left_box .slogan h2{font-size: 2.2rem; text-align: center;}
+  .left_box .search .keyword{width: 60%; margin: 40px auto;}
+  .left_box .search .keyword a:hover{opacity: .7;}
+  .mainSlider{display: none;}
+  .mainSlider .swiper-slide{width: 100% !important; height: auto;}
+  .right_box::before{right: 40px; top: 670px; z-index: -10;}
+  .custom-prev, .custom-next {display: none;}
+  .visual_icon{flex-wrap: wrap; justify-content: center; gap: 15px; order: 1;}
+  .visual_icon .icon:last-child{margin-left: 15px; margin-right: auto;}
+  .visual_icon .icon{width: 45%; height: 100px;}
+  i.fa-quote-left{position: absolute; left: 15%; top: 80px; color: var(--big-point-color); width: 30px; height: 30px;}
+  .slide-wrapper{width: 60%; margin: auto; display: flex; flex-direction: column;}
+  .innerText{width: 80%; height: 60px;}
+  .innerText h4{font-size: 18px;}
+  .innerText h2{font-size: 22px;}
+  /************* project ************/
+  .project{width: 100%; margin: 0; padding: 0; height: 80%;}
+  .project_sliderWrap{flex-direction: column; gap: 40px;}
+  .projectCard, .projectCard:nth-child(3){width: 80%; height: 10%; background-color: #2285D7; margin-top: -30px;}
+  .projectCard h1, .projectCard:nth-child(3) h1{margin-top: -18px; font-size: 24px;}
+  .projectCard:hover{cursor: pointer; transform: translateY(-5px); background-color: #0a5a9b;}
+  .project br{display: none;}
+  /************* method ************/
+  .method .moreBtn{ position: absolute; right: 40px; top: 160px;}
+  .method{position: relative;}
+  .method .methTop{width: 90%; margin-right: 20px; padding: 50px;}
+  .method .methcard{margin-top: -70px;}
+  .method .methcard:first-child{margin-top: -82px;}
+  .method .methTop h4{font-size: 20px;}
+  .method .methTop p{font-size: 14px;}
+  .method .methTop img{width: 100px;}
+  .method .dot{display: none;}
+  .methBottom{width: 80%;}
+  .downloadBox{position: absolute; bottom: 180px;}
+  .methBottom .mon{width: 120%;}
+  .methBottom .mon h5, .methBottom .mon p{font-size: 16px;}
+  .downloadBtn{display: none;}
+  /************* awards ************/
+  .awards{width: 100%; height: 550px; margin-top: -100px; position: relative;}
+  .awardsNumber{flex-direction: column; position: absolute; left: 50%; transform: translateX(-20%);}
+  .awardsNumber li{ width: 40%; height: 10%;}
+  .awards h5{position: relative; top: -20px; right: 40px;}
+  .awards span{display: inline-block; font-size: 26px;}
+  .awards p{font-size: 22px; font-weight: 700; float: left; margin-left: 100px;}
+  /************* notice ************/
+  .notice{width: 80%; height: 800px;}
+  .notice .innerText{margin-right: 200px;}
+  .notice.moreBtn{position: absolute;}
+  .tabMenuWrap{flex-wrap: wrap;}
+  .noticeContent{width: 100%; height:90px; margin-top: 30px;}
+  .noticeContent:nth-child(1){width: 100%; height:90px;}
+  .noticeContent svg{right: 120px; top: 22%; position: absolute;}
+  .noticeContent .date{left: 50px; top: 19%; position: absolute;}
+  .noticeContent .today{left: 50px; top: 44%; position: absolute; font-size: 22px;}
+  .noticeContent p{width: 400px; margin-left: 20%; margin-top: -75px;}
+  .noticeContent .tabBtn{display: none;}
+  /************* ask ************/
+  .ask{width: 90%; flex-direction: column; margin-bottom: 100px; height: 860px;}
+  .ask .moreBtn{display: none;}
+  .ask .innerText{height: 50%;}
+  .askWrap{width: 95%; margin-top: 350px;}
+  /************* linkSite ************/
+  .linkSite{height: 1200px; position: relative;}
+  .linkSiteWrap{width: 800px; position: absolute; top: 100px; left: 50%; transform: translateX(-50%);}
+  .linkSiteWrap span{font-size: 14px;}
+  .linkSiteInner{padding: 0 60px;}
+  /************* customer ************/
+  .customer{width: 90%; margin-top: -15px; position: relative;}
+  .customer .moreBtn{margin-top: 120px;}
+  .customerList_inner{display: flex; flex-wrap: wrap; margin-top: 70px; flex-wrap: wrap; flex-direction: column;}
+  .customer img{width: 70px;}
+  .customerList li{width: 100px; gap: 80px; display: flex;}
+  /************* footer ************/
+  .footerContent{width: 90%;}
+  .ftDownload{display: none;}
+  .right_menu{display: none;}
+  .ftInfoArea{margin-top: -30px;}
+  .contact h4{margin-top: 60px;}
+  /************* login ************/
+  .container{width: 100%;}
+  main{width: 100%;}
+  #my-table{width: 100%; font-size: 12px; padding: 10px;}
+}
+/**************** 모바일 반응형 ****************/
+@media screen and (max-width: 767px){
+  .left_box .search .keyword{width: 80%;}
+  .left_box .search .keyword a{font-size: 12px;}
+  .left_box .slogan h2{font-size: 32px;}
+  .banner .slide-wrapper .slide > p{white-space: nowrap;}
+  .visual_icon .icon{width: 100%; margin: 10px;}
+  .visual_icon .icon:last-child{width: 100%; margin-right: 10px;}
+  .right_box::before{display: none;}
+  .innerText h6{font-size: 16px;}
+  .project{height: 1350px;}
+  .projectCard{height: 240px;}
+  .projectCard:nth-child(3){height: 240px;}
+  .projectCard:nth-child(3) p{font-size: 12px;}
+  .methTop{margin-left: -26px;}
+  .methTop .methcard{padding: 0; margin: 5px;}
+  .methTop .methcard:first-child{margin-top: -7px;}
+  .methTop .methcard h4{font-size: 14px;}
+  .methTop .methcard p{font-size: 12px; overflow: hidden; white-space: nowrap;}
+  .method .tell{margin-top: -20px;}
+  .method .tell span{font-size: 15px; margin: 10px;}
+  .noticeContent span{margin-left: -10px;}
+  .noticeContent p{font-size: 14px;}
+  .noticeContent svg{display: none;}
+  .notice .noticeContent p{width: 180px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+  .ask{height: 900px;}
+  .ask .askBtn{margin-top: 40px;}
+  .ask .innerText span{font-size: 14px;}
+  .askWrap{margin-top: 400px;}
+  .customer .innerText p{font-size: 14px;}
+  .ask .askWrap .answer{height: 100px; padding: 0 0 0 30px; font-size: 13px; line-height: 3;}
+  .askWrap label{padding: 0 0 0 30px;}
+  .linkSite{height: 2700px;}
+  .linkSiteInner span{font-size: 12px;}
+  .linkSiteInner i{font-size: 14px;}
+  .linkSiteWrap{width: 100%;}
+  .ask .innerText p{font-size: 34px;}
+  .ask .innerText p br{display: none;}
+  .downloadBox .mon{width: 100%; padding: 0; border-radius: 15px; padding: 10px;}
+  .downloadBox .mon h5{font-size: 14px; margin-top: 7px; margin-left: 25px;}
+  .downloadBox .mon p{font-size: 13px; margin-top: 7px; margin-right: 25px;}
+  .downloadBtn{display: none;}
+  .moreBtn a{font-size: 14px; margin-top: 80px;}
+  .contact a{font-size: 28px;}
+  .container{width: 100%;}
+  main{width: 100%;}
+  #my-table{width: 100%; font-size: 12px; padding: 10px;}
+  tbody td:nth-child(1){width: 60px;}
+  th:nth-child(3),tbody td:nth-child(3){display: none;}
+  th:nth-child(4),tbody td:nth-child(4){display: none;}
+  th:nth-child(5),tbody td:nth-child(5){display: none;}
+}
