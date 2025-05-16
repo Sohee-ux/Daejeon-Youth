@@ -145,7 +145,7 @@ body{
 .siteMap_wrap button{
   width: 44px; 
   height: 44px;
-  background-image: url(images/sitemapIcon.png);
+  background-image: url(../images/sitemapIcon.png);
   background-color: transparent;
 }
 /**************** subMenu **************/
@@ -436,19 +436,19 @@ i.fa-quote-left{
   transform: translateX(3px);
 }
 .visual_icon .icon:nth-child(1) em{
-  background-image: url(images/hands-helping-solid.svg);
+  background-image: url(../images/hands-helping-solid.svg);
 }
 .visual_icon .icon:nth-child(2) em{
-  background-image: url(images/heartbeat-solid.svg);
+  background-image: url(../images/heartbeat-solid.svg);
 }
 .visual_icon .icon:nth-child(3) em{
-  background-image: url(images/bookmark-heart.svg);
+  background-image: url(../images/bookmark-heart.svg);
 }
 .visual_icon .icon:nth-child(4) em{
-  background-image: url(images/journal-bookmark-fill.svg);
+  background-image: url(../images/journal-bookmark-fill.svg);
 }
 .visual_icon .icon:nth-child(5) em{
-  background-image: url(images/info-circle.svg);
+  background-image: url(../images/info-circle.svg);
 }
 /**************** quickWrap ****************/
 .quickWrap{
