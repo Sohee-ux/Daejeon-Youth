@@ -316,7 +316,7 @@ i.fa-quote-left{
 .right_box::before{
   content: '';
   position: absolute;
-  background: url(/images/main_vis.png) ;
+  background: url(../images/main_vis.png) ;
   background-repeat: no-repeat;
   width: 400px; height:145px; background-size: cover;
   top: 15px; right: -100px;
